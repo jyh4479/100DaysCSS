@@ -1,0 +1,78 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    /* em은 해당 요소의 font-size, rem은 최사당 font-size */
+
+    width: 8rem;
+    height: 8rem;
+
+    background: radial-gradient(
+        /* 왼쪽으로부터 30%, 위쪽에서부터 107% */
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285AEB 90%
+    );
+
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-box {
+    width: 70%;
+    height: 70%;
+
+    border: 8px solid #ffffff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner-box::before {
+    content: '';
+    width: 50%;
+    height: 50%;
+
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+}
+
+.inner-box::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    top: 7px;
+    right: 7px;
+    border-radius: 50%;
+    position: absolute;
+}
