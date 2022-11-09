@@ -22,3 +22,25 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.line-box {
+    cursor: pointer;
+}
+
+.line-box:active > div {
+    transform: scale(0.95);
+}
+
+.line-box:hover > div {
+    background: lightblue;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    width: 170px;
+    height: 10px;
+    background: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+}
