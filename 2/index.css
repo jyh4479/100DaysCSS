@@ -105,7 +105,7 @@
     }
 
     100% {
-        transform: translate(0, -30px) rotate(-45deg);
+        transform: translate(0, -30px) rotate(135deg);
     }
 }
 
@@ -139,7 +139,7 @@
 
 @keyframes line-3-animation-reverse {
     0% {
-        transform: translate(0, -30px) rotate(-45deg);
+        transform: translate(0, -30px) rotate(135deg);
     }
 
     50% {
