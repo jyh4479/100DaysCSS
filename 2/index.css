@@ -69,6 +69,10 @@
     animation: line-3-animation .7s ease-in forwards;
 }
 
+.no-animation {
+    animation: none;
+}
+
 @keyframes line-1-animation {
     0% {
     }

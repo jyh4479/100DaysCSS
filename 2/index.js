@@ -3,6 +3,7 @@ const lines = window.document.querySelectorAll(".line-box > div");
 
 lineBox.addEventListener("click", () => {
     lines.forEach(line => {
+        line.classList.remove("no-animation");
         line.classList.toggle("active");
     });
 })
